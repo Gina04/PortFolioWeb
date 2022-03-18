@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+body{
+
+    background: #F5F5F5;
+}
+header{
+    width: 100vw;
+    height: 88px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+}
+.logo{
+    width: 160px;
+    height: 24px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+nav{
+    width: 653px;
+    height: 19px;
+    margin: 0  auto;
+   
+}
+nav li{
+ display: inline;
+ margin-left: 30px; 
+}
+
+nav a{
+    color:#464646;
+    text-decoration: none;
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px;
+}
+
+#hero{
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-hero{
+    width: 751px;
+    height: 246px;
+    margin: 0 0 0 auto;
+    line-height: 25.83px;
+
+}
+
+.text-hero h2{
+    font-size: 52px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 61px;
+    font-weight: 700px;
+}
+
+.img-hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height:300px;
+    border-radius: 50%;
+    margin:auto;
+    overflow: hidden;
+    
+}
+
+.link-hero{
+    width: 467px;
+    height: 24px;
+    margin-top: 108px;    
+}
+.lst-link-hero{
+    display: flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content: space-between;
+    font-size:'Raleway', sans-serif; 
+    color: #464646;
+}
+
+.lst-link-hero a{
+    text-decoration: none;
+}
+
+#sobreMi{
+    height: 383px;
+    padding: 64px;
+    background: #EAF2FD;
+}
+
+.text-sobreMi{
+    width: 1136px;
+    height: 255px;
+   
+}
+
+.descripcion-sobreMi{
+    width: 751px;
+    height: 133px;
+    font-size: 16px;
+    font-family: 'Raleway', sans-serif;
+    line-height: 18px;
+    color: #464646;
+    margin-top: 44px;
+}
+
+#skills-hobbies{
+    width: 100%;
+    height: 700px;
+    margin-top: 32px;
+}
+
+.skills, .hobbies{
+    width: 1136px;
+    height: 244px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    margin: 32px auto;
+   
+}
+
+.lst-box-skills, .lst-box-hobbies{
+    width: 1136px;
+    height: 174px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 32px;
+    
+}
+
+.titulo-skills, .titulo-hobbies, .titulo-sobreMi, .titulo-formacion, .titulo-contacto{
+    font-size: 32px;
+    color: #464646;
+    font-family: 'Raleway', sans-serif; 
+
+}
+
+.box-skills, .box-hobbies{
+    width: 176px;
+    height: 174px;
+    background: white;
+ 
+}
+
+#formacion{
+    width: 1440px;
+    height: 581px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background:#EAF2FD;
+}
+
+.lst-box-formacion{
+    width: 1136px;
+    height: 347px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 152px;
+    margin-top: 32px;
+}
+.box-formacion{
+    width: 368px;
+    height: 347px;
+    margin: auto;
+    display: flex;
+    flex-direction:column;
+
+}
+
+.img-formacion{
+    width: 368px;
+    height: 286px;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#contacto{
+    width: 100%;
+    height: 788px;
+    background: #EAF2FD;
+    display: flex;
+    margin-top: 32px;
+    flex-direction: row;
+}
+
+form{
+    width: 656px;
+    height: 596px;
+    margin-left: 16px;
+    margin-top: 129px;
+    /*background: red;*/
+
+     
+}
+
+form label{
+    display:block;
+    font-size: 20px;
+    margin: 0  0 10px;
+}
+
+form input, form textarea{
+    display: block;
+    padding: 10px 25px;
+    width: 50%;
+    border:0;
+    margin: 32px 0;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0.5em;
+}
+
+.img-contacto{
+    width: 464px;
+    height: 593px;
+    margin-left: 152px;
+    margin-top: 129px;
+}
+
+
+footer{
+    text-align: center;
+}
