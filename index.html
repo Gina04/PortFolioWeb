@@ -2,7 +2,8 @@
 <html lang="es">
     <head>
         <meta charset="UTF-8">
-        <title>Georgina Bosque</title>
+        <meta name="viewport" content="width=device=width">
+        <title>Georgina Bosque ★</title>
         <link rel="stylesheet" href="reset.css">
         <link rel="stylesheet" href="style.css">
 
@@ -11,7 +12,7 @@
     <body>
         <header>
                  <div class="logo">
-                        <h1><img src="imagenes/Group.png"> Bosque Georgina</h1>
+                        <h1><img src="imagenes/Group.png" alt="logo de mi portfolio"> Bosque Georgina</h1>
                  </div>    
             
                  <nav>
@@ -29,7 +30,7 @@
         <main>
             <section id="hero">
                 <div class="text-hero">
-                    <h2 style="font-weight: bold; font-size: 24px; text-align:justify;">Hola, mi nombre es Georgina y construyo paginas web...</h2>
+                    <h2>Hola, mi nombre es Georgina y construyo paginas web...</h2>
                     <p>
                         Lorem Ipsum
                         "Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."
@@ -47,13 +48,13 @@
                     </div>
                 </div>
                 <div class = "img-hero">
-                   <img src="imagenes/fotoCv.jpg" alt="foto-cv" width="300px">
+                   <img src="imagenes/fotoCv.jpg" alt="foto-cv">
                 </div>
             </section>
 
             <section id="sobreMi">
-                <div class="text-sobreMi">
-                    <p class="titulo-sobreMi">Sobre mi</p>
+                <div class="contenido-sobreMi" style="padding: 67px;">
+                    <p class="tituloPrincipal">Sobre mi</p>
                     <p class="descripcion-sobreMi">
                         No sólo sobrevivió 500 años, sino que tambien ingresó como texto de relleno en documentos electrónicos, quedando esencialmente igual al original. Fue popularizado en los 60s con la creación de las hojas "Letraset", las cuales contenian pasajes de Lorem Ipsum, y más recientemente con software de autoedición, como por ejemplo Aldus PageMaker, el cual incluye versiones de Lorem Ipsum.
                     </p>
@@ -65,7 +66,7 @@
 
             <section id="skills-hobbies">
                 <div class="skills">
-                    <p class="titulo-skills">Skills</p>
+                    <p class="tituloPrincipal">Skills</p>
                     <div class="lst-box-skills">
                         <div class="box-skills">
                             <img src="imagenes/.png">
@@ -89,7 +90,7 @@
 
                 
                 <div class="hobbies">
-                    <p class="titulo-hobbies">Hobbies</p>
+                    <p class="tituloPrincipal">Hobbies</p>
                     <div class="lst-box-hobbies">
                         <div class="box-hobbies">
                             <img src="imagenes/VectorSeries.png">
@@ -103,7 +104,7 @@
             </section>
 
             <section id ="formacion">
-                <p class="titulo-formacion">Formación Académica</p>
+                <p class="tituloPrincipal">Formación Académica</p>
                 <div class="lst-box-formacion">
                     <div class="box-formacion">
                         <div  class="img-formacion">
@@ -149,21 +150,25 @@
                     <img src="imagenes/contactame.png">
                 </div>
                 <form>
-                    <p class="titulo-contacto">Contacto</p>
-                    <p>Quieres contactarme?</p>
-                    <p>Complete el siguiente formulario y me pondre en contacto con usted lo antes posible.</p>
+                    <div class="text-contacto">
+                        <p class="tituloPrincipal">Contacto</p>
+                        <p>Quieres contactarme?</p>
+                        <p>Complete el siguiente formulario y me pondre en contacto con usted lo antes posible.</p>
+
+                    </div>
+                    
                     <input type="text" id="fname" placeholder="Nombre">
 
-                    <input type="email" id="email" placeholder="G-mail">
+                    <input type="email" id="email" placeholder="E-mail">
 
                     <input type="text" placeholder="Asunto">
 
                     <textarea cols="80" rows="10" placeholder="Mensaje"></textarea>
                     
-                    <input type="submit" id="enviar-mensaje" value="Enviar mensaje">
+                    <input type="submit" class="enviar" value="Enviar mensaje">
         
                 </form>
-              
+                
 
             </section>
              
