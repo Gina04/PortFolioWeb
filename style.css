@@ -37,21 +37,21 @@ nav a{
 
 #hero{
     width: 100%;
-    height: 60vh;
+    height: 368px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    
+    align-items: center; 
 }
 
 .text-hero{
     width: 751px;
     height: 246px;
-    margin: auto;
     line-height: 25.83px;
+    padding: 32px;
 }
 
 .text-hero h2{
+    height: 40px;
     text-align:justify;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
@@ -76,8 +76,8 @@ nav a{
 
 .link-hero{
     width: 467px;
-    height: 24px;
-    margin-top: 80px;    
+    height: 24px;   
+    margin-top: 10px; 
 }
 .lst-link-hero{
     display: flex;
@@ -269,9 +269,9 @@ TABLET
     }
     #hero{
         width: auto;
-        height: 50vh;
+        height: 210px;
         flex-direction: row;
-        margin: auto;
+        margin-bottom: 32px;
 
     }
     nav{
@@ -281,8 +281,16 @@ TABLET
     .text-hero{
         width: 524px;
         height: 130px;
-        margin-top: 30px;
     }
+    .text-hero h2{
+        height: 52px;
+    }
+
+    .text-hero p{
+        height: auto;
+    }
+
+
 
     .img-hero{
         width: 146px;
@@ -325,11 +333,53 @@ TABLET
 *
 *
 CELULARES
-
 480px
 *
 *
 */
 
+@media screen and (max-width: 480px){
+    #hero {
+        width: auto;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+    .text-hero{
+        height: auto;
+    }
+
+    .text-hero h2{
+        height: 52px;
+    }
+    .link-hero{
+        height: 16px;
+    }
+
+    .img-hero{
+        width: 98px;
+        height: 98px;
+        margin-top:0;
+        
+    }
+
+    .text-hero,.link-hero{
+        width: auto;
+    }
+
+    .descripcion-sobreMi {
+        height: auto;
+        margin-top: 16px;
+    }
+
+    .lst-box-skills, .lst-box-hobbies{
+       flex-wrap: wrap;
+        
+    }
+
+
+
+
+}
 
    
