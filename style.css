@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 body{
     background: #F5F5F5;
-    font-size: 1.5rem;
 }
 header{
     width: 100%;
@@ -115,21 +114,14 @@ nav a{
     margin-top: 44px;
 }
 
-#skills-hobbies{
-    width: 100%;
-    height: 700px;
-    margin-top: 32px;
-}
-
-.skills, .hobbies{
+#skills, #hobbies{
     width: 100%;
     height: 244px;
     display: flex;
     flex-direction:column;
-    justify-content: center;
     align-items: center;
     margin: 32px auto;
-   
+    padding: 16px;
 }
 
 .lst-box-skills, .lst-box-hobbies{
@@ -174,6 +166,7 @@ nav a{
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    flex-wrap: wrap;
     margin-top: 32px;
     
 }
@@ -223,8 +216,8 @@ form input, form textarea{
     padding: 10px 25px;
     width: 50%;
     border:0;
-    margin: 32px 0;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    margin: 32px auto;
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
     border-radius: 0.5em;
 }
 
@@ -373,9 +366,47 @@ CELULARES
         margin-top: 16px;
     }
 
+    #skills, #hobbies{
+        width:auto;
+        height: 508px;
+        padding: 16px;
+
+       
+    }
+
     .lst-box-skills, .lst-box-hobbies{
        flex-wrap: wrap;
         
+    }
+    .box-skills, .box-hobbies{
+        width: 156px;
+        height: 118px;
+        margin: 22px auto 0 auto;
+    }
+
+    #formacion{
+        width: auto;
+        height: 661px;
+        display: flex;
+       
+    }
+
+    .lst-box-formacion{
+        width: auto;
+        height: 539px;
+        flex-wrap: wrap;
+        
+    }
+
+    .box-formacion{
+        width: 296px;
+        height: 118px;
+        
+    }
+
+    form input, form textarea {
+        width: 80%;
+       
     }
 
 
