@@ -120,7 +120,6 @@ nav a{
     display: flex;
     flex-direction:column;
     align-items: center;
-    margin: 32px auto;
     padding: 16px;
 }
 
@@ -208,7 +207,7 @@ form{
 form label, .text-contacto{
     display:block;
     font-size: 20px;
-    margin: 0  0  0 auto;
+    padding: 16px;
 }
 
 form input, form textarea{
@@ -368,10 +367,8 @@ CELULARES
 
     #skills, #hobbies{
         width:auto;
-        height: 508px;
-        padding: 16px;
-
-       
+        height: 400px;
+        padding: 16px;  
     }
 
     .lst-box-skills, .lst-box-hobbies{
