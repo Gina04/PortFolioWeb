@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 body{
     background: #F5F5F5;
+    font-family: "Montserrat", sans-serif;
+    
 }
 header{
     width: 100%;
@@ -135,7 +137,7 @@ nav a{
 
 .tituloPrincipal{
     font-size: 32px;
-    color: #464646;
+    color:#4d4d4d;
     font-family: 'Raleway', sans-serif; 
 
 }
@@ -145,6 +147,10 @@ nav a{
     height: 174px;
     background: white;
     margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
  
 }
 
@@ -206,18 +212,19 @@ form{
 
 form label, .text-contacto{
     display:block;
-    font-size: 20px;
-    padding: 16px;
+    font-size:16px;
+    margin-bottom: 0.5rem;
+    width: 70%;
 }
 
-form input, form textarea{
+.input, .textarea{
     display: block;
-    padding: 10px 25px;
-    width: 50%;
-    border:0;
-    margin: 32px auto;
-    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
-    border-radius: 0.5em;
+    padding: 1.375rem 0.5rem 0.5rem;
+    width: 70%;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 7px;
 }
 
 .img-contacto{
@@ -229,22 +236,98 @@ form input, form textarea{
 
 .enviar{
     width:144px;
-    height: 51px;
-    padding: 16px;
+    height: 45px;
+    border: none;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: bold;
     background: #2A7AE4;
     transition: 1s all;
     cursor: pointer;
+    border-radius: 7px;
+    
 }
 .enviar:hover{
     background: darkblue;
 }
 
+.input-contacto{
+    position: relative;
+    margin-bottom: 1rem;
+}
+.input-label{
+    position:absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size:20px;
+    transition: all 0.25s;
+    color: #4d4d4d;
+}
+
+.input::placeholder{
+    visibility: hidden;
+    color: #00000000;
+}
+.input-contacto-invalid .input{
+    border: 1px solid #df2525;
+}
+
+.input-contacto-invalid .input-label{
+    color:#df2525;
+}
+  
+.input-contacto-invalid .input-mensaje-error {
+    color: #df2525;
+    display: block;
+    margin-bottom: 1.375rem;
+    padding-left: 0.5rem;
+  }
+
+
+.input:focus {
+    outline: none;
+  }
+
+.input:not(:placeholder-shown) + .input-label,
+.input:focus + .input-label {
+  font-size: 0.875rem;
+  top:0.25rem;
+  transition: all 0.25s;
+}
+
+
+.textarea-contacto {
+    position: relative;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    font-weight: 300;
+}
+.textarea{
+    resize: none;
+}
+.textarea::placeholder {
+    visibility: hidden;
+  }
+
+.textarea-label{
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    font-size: 20px;
+    transition: all 0.25s;
+}  
+
+.textarea:not(:placeholder-shown) + .textarea-label,
+.textarea:focus + .textarea-label {
+  font-size: 0.875rem;
+  top: 0.25rem;
+  transition: all 0.25s;
+}
+
 
 footer{
     text-align: center;
+    padding: 32px;
 }
 
 /*
