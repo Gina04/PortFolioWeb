@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 body{
     background: #F5F5F5;
-    font-family: "Montserrat", sans-serif;
+    font-family: "Raleway", sans-serif;
     
 }
 header{
@@ -223,8 +223,10 @@ form label, .text-contacto{
     width: 70%;
     border-radius: 7px;
     border: none;
-    box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
     border-radius: 7px;
+    
+
 }
 
 .img-contacto{
