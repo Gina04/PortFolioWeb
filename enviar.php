@@ -4,10 +4,13 @@
 	$email= $_POST["email"];
 	$asunto= $_POST["asunto"];
 	$mensaje= $_POST["mensaje"];
+	
+	$destino="georginabosque@gmail.com";
+	$asunto="Mensaje enviado de PortFolioWeb";
+	$remitente= "FROM: $nombre $email";
 
-	$mensaje = "Hola ". $nombre. ",\n". "Gracias por escribirme \n". "Hemos recibido tu mensaje de: \n ". $mensaje;
 
-	$enviado = mail($email, $asunto, $mensaje);// false o true
+	$enviado = mail($destino,$asunto, $mensaje, $remitente);// false o true
 
 	if($enviado){
 		echo "Mensaje enviado exitosamente";

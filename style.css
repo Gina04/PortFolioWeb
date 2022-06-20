@@ -2,7 +2,7 @@
 body{
     background: #F5F5F5;
     font-family: "Raleway", sans-serif;
-    
+    box-sizing: content-box; 
 }
 header{
     width: 100%;
@@ -36,11 +36,17 @@ nav a{
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-size: 16px;
+
+}
+
+nav a:hover{
+    border-bottom: 1px solid #2A7AE4;
+
 }
 
 #hero{
     width: 100%;
-    height: 368px;
+    height: auto;
     display: flex;
     justify-content: space-between;
     align-items: center; 
@@ -48,13 +54,12 @@ nav a{
 
 .text-hero{
     width: 751px;
-    height: 246px;
+    height: auto;
     line-height: 25.83px;
     padding: 32px;
 }
 
 .text-hero h2{
-    height: 40px;
     text-align:justify;
     font-size: 1.5em;
     font-family: 'Raleway', sans-serif;
@@ -65,17 +70,14 @@ nav a{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 300px;
-    height:300px;
+    width: 250px;
+    height: 250px;
     border-radius: 50%;
     margin:auto;
     overflow: hidden;
     
 }
 
-.img-hero img{
-    width: 300px;
-}
 
 .link-hero{
     width: 467px;
@@ -97,7 +99,7 @@ nav a{
 
 #sobreMi{
     width: 100%;
-    height: 383px;
+    height: auto; /*Conviene poner alto automatico?*/
     background: #EAF2FD;
 }
 
@@ -109,7 +111,7 @@ nav a{
 
 .descripcion-sobreMi{
     width: 751px;
-    height: 133px;
+    height: auto;
     font-size: 16px;
     font-family: 'Raleway', sans-serif;
     line-height: 18px;
@@ -123,46 +125,63 @@ nav a{
     display: flex;
     flex-direction:column;
     align-items: center;
-    padding: 16px;
+   /* padding: 16px;*/
+    margin-bottom: 20px;
+    margin-top: 20px;
+    
 }
 
 .lst-box-skills, .lst-box-hobbies{
     width: 100%;
-    height: 174px;
+    height: auto;
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin-top: 32px;
     
 }
 
+.formacion .tituloPrincipal{
+    text-align: center;
+}
+
 .tituloPrincipal{
     font-size: 32px;
     color:#4d4d4d;
-    font-family: 'Raleway', sans-serif; 
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 
 }
 
 .box-skills, .box-hobbies{
-    width: 176px;
-    height: 174px;
+    width: 100%;
+    max-width: 150px;
+    height: 150px;
     background: white;
     margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-shadow: 0 2px 10px 2px #00000010;
     justify-content: center;
- 
 }
 
+.box-hobbies:hover{
+      transition: 0.2s;
+      transform: translate(0px,13%);
+
+}
+
+.box-skills:hover{
+      transition: 0.2s;
+      transform: translate(0px,13%);
+
+}
+
+
 #formacion{
-    width: 100%;
-    height: 581px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     background: #EAF2FD;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
     
 }
 
@@ -170,28 +189,31 @@ nav a{
     width: 100%;
     height: 347px;
     display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    margin-top: 32px;
-    
+    margin-top: 32px;   
 }
+
 .box-formacion{
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     height: 250px;
     margin: auto;
     display: flex;
     flex-direction:column;
+    align-items: center;
 
 }
 
 .img-formacion{
     width: 200px;
-    height: 286px;
+    height: auto;
     background: white;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.box-formacion-informacion{
+    padding: 6% 0;
 }
 
 #experiencia-profesional{
@@ -199,17 +221,21 @@ nav a{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-top: 3rem;
+    padding-bottom:3rem;
 }
 
 .contenedor-experiencia-profesional{
     display: flex;
     flex-direction: row;
     margin-top: 32px;
+    padding: 30px;
 }
 
+
 .frameworks{
-    width: 700px;
-    height: 406px;
+    width: 60%;
+    height: auto;
 }
 
 .frameworks img{
@@ -217,9 +243,15 @@ nav a{
     height: auto;
 }
 
+
+.frameworks:hover{
+     box-shadow: 3px 3px 8px hsl(0, 0%, 70%);
+     transition: all 0.4s;
+}
+
 .descripcion-frameworks{
     width: 384px;
-    height: 406px;
+    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -257,40 +289,38 @@ nav a{
 }
 
 form{
-    width: 656px;
+    width: 50%;
     height: 596px;
-    margin-left: 16px;
-    margin-top: 129px;
-    
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
 
 form label, .text-contacto{
     display:block;
     font-size:16px;
-    margin-bottom: 0.5rem;
-    width: 70%;
+    /*margin-bottom: 0.5rem;
+    width: 70%;*/
 }
 
 .input, .textarea{
     display: block;
-    padding: 1.375rem 0.5rem 0.5rem;
-    width: 70%;
-    border-radius: 7px;
-    border: none;
-    /*box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);*/
-    border-radius: 7px;
-    
+    padding: 13px 20px;
+    width: 100%;
+    border: 1px solid #ededed !important;
+    box-sizing: border-box;
 
 }
 
 .img-contacto{
-    width: 464px;
     height: 593px;
-    margin-left: 152px;
     margin-top: 129px;
+    margin: auto;
 }
 
-.enviar{
+.boton-enviar{
     width:144px;
     height: 45px;
     border: none;
@@ -303,13 +333,12 @@ form label, .text-contacto{
     border-radius: 7px;
     
 }
-.enviar:hover{
+.boton-enviar:hover{
     background: darkblue;
 }
 
 .input-contacto{
     position: relative;
-    margin-bottom: 1rem;
 }
 .input-label{
     position:absolute;
@@ -354,9 +383,6 @@ form label, .text-contacto{
 
 .textarea-contacto {
     position: relative;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-    font-weight: 300;
 }
 .textarea{
     resize: none;
@@ -382,9 +408,21 @@ form label, .text-contacto{
 
 
 footer{
-    text-align: center;
-    padding: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
+
+.footer-social{
+    display: flex;  
+}
+
+.footer-social-items{
+    margin: 6px;
+}
+
+
 
 /*
 *
@@ -395,13 +433,11 @@ TABLET
 *
 */
 
-@media screen and (max-width: 768px){
+@media only screen and (min-width: 401px) and (max-width: 960px){
     .logo{
         margin-left: 29px;
     }
     #hero{
-        width: auto;
-        height: 210px;
         flex-direction: row;
         margin-bottom: 32px;
 
@@ -412,7 +448,7 @@ TABLET
 
     .text-hero{
         width: 524px;
-        height: 130px;
+        height: auto;
     }
     .text-hero h2{
         height: 52px;
@@ -421,8 +457,6 @@ TABLET
     .text-hero p{
         height: auto;
     }
-
-
 
     .img-hero{
         width: 146px;
@@ -439,16 +473,25 @@ TABLET
         width: auto;
     }
 
-    .lst-box-formacion {
-        margin: 32px 0 0 42px;
+     .frameworks{
+        width: 100%;
     }
+
+    .contenedor-experiencia-profesional {
+        flex-direction: column;
+    }
+    .descripcion-frameworks {
+    justify-content: flex-start;
     
+    }
+  
     .img-contacto{
       display: none;
     }
-
+    
     form{
-        margin: 20px auto 0 auto;  
+        width: 90%; 
+        margin: 3rem auto;
     }
 
     form input, form textarea{
@@ -470,7 +513,7 @@ CELULARES
 *
 */
 
-@media screen and (max-width: 480px){
+@media screen and (max-width: 768px){
     #hero {
         width: auto;
         height: auto;
@@ -484,13 +527,9 @@ CELULARES
     .text-hero h2{
         height: 52px;
     }
-    .link-hero{
-        height: 16px;
-    }
+   
 
     .img-hero{
-        width: 98px;
-        height: 98px;
         margin-top:0;
         
     }
@@ -500,44 +539,54 @@ CELULARES
     }
 
     .descripcion-sobreMi {
+        width: 100%;
         height: auto;
         margin-top: 16px;
     }
 
     #skills, #hobbies{
         width:auto;
-        height: 400px;
-        padding: 16px;  
+        height: auto;
+        /*padding: 16px;  */
     }
 
     .lst-box-skills, .lst-box-hobbies{
        flex-wrap: wrap;
+       align-items: center;
         
     }
     .box-skills, .box-hobbies{
-        width: 156px;
-        height: 118px;
         margin: 22px auto 0 auto;
     }
 
-    #formacion{
-        width: auto;
-        height: 661px;
-        display: flex;
-       
-    }
 
     .lst-box-formacion{
         width: auto;
-        height: 539px;
+        height: auto;
         flex-wrap: wrap;
         
     }
 
     .box-formacion{
         width: 296px;
-        height: 118px;
+        height: auto;
         
+    }
+
+     .contenedor-experiencia-profesional {
+        flex-direction: column;
+    }
+
+    .contenedor-experiencia-profesional:nth-child(1){
+        order: -1;
+    }
+
+    .frameworks{
+        width: 100%;
+    }
+    .descripcion-frameworks {
+    justify-content: flex-start;
+    
     }
 
     /*FLECHA DE NAVEGACION*/
@@ -548,8 +597,16 @@ CELULARES
        
     }
 
+    .boton-enviar{
+        width: 100%;
+    }
 
-
+    .img-contacto{
+        display: none;
+    }
+    .form {
+    width: 90%;
+   }
 
 }
 
